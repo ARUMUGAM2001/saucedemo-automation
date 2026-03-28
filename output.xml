@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.0 on win32)" generated="2026-03-27T18:39:14.769672" rpa="false" schemaversion="5">
+<suite id="s1" name="Saucedemo Tests" source="C:\Users\ARUMUGAM\PycharmProjects\myautomation\e2e_project\saucedemo_tests.robot">
+<kw name="Start Browser" owner="SauceDemoLibrary" type="SETUP">
+<msg time="2026-03-27T18:39:16.200272" level="INFO">DEBUG: open_browser called
+DEBUG: driver created
+DEBUG: all pages ready</msg>
+<doc>Keyword: Start Browser</doc>
+<status status="PASS" start="2026-03-27T18:39:14.961210" elapsed="1.239153"/>
+</kw>
+<test id="s1-t1" name="TC01 - Login Test" line="13">
+<kw name="Open Saucedemo" owner="SauceDemoLibrary">
+<doc>Keyword: Open Saucedemo</doc>
+<status status="PASS" start="2026-03-27T18:39:16.200979" elapsed="0.327846"/>
+</kw>
+<kw name="Login" owner="SauceDemoLibrary">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<doc>Keyword: Login</doc>
+<status status="PASS" start="2026-03-27T18:39:16.529087" elapsed="0.266618"/>
+</kw>
+<kw name="Wait For Load" owner="SauceDemoLibrary">
+<doc>Keyword: Wait For Load</doc>
+<status status="PASS" start="2026-03-27T18:39:16.796003" elapsed="0.016713"/>
+</kw>
+<status status="PASS" start="2026-03-27T18:39:16.200507" elapsed="0.612522"/>
+</test>
+<test id="s1-t2" name="TC02 - Add To Cart And Validate" line="18">
+<kw name="Open Saucedemo" owner="SauceDemoLibrary">
+<doc>Keyword: Open Saucedemo</doc>
+<status status="PASS" start="2026-03-27T18:39:16.813816" elapsed="0.062164"/>
+</kw>
+<kw name="Login" owner="SauceDemoLibrary">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<doc>Keyword: Login</doc>
+<status status="PASS" start="2026-03-27T18:39:16.876231" elapsed="0.174160"/>
+</kw>
+<kw name="Wait For Load" owner="SauceDemoLibrary">
+<doc>Keyword: Wait For Load</doc>
+<status status="PASS" start="2026-03-27T18:39:17.050769" elapsed="0.010665"/>
+</kw>
+<kw name="Add To Cart" owner="SauceDemoLibrary">
+<doc>Keyword: Add To Cart</doc>
+<status status="PASS" start="2026-03-27T18:39:17.061651" elapsed="0.232355"/>
+</kw>
+<status status="PASS" start="2026-03-27T18:39:16.813447" elapsed="0.480843"/>
+</test>
+<test id="s1-t3" name="TC03 - Full Checkout Flow" line="24">
+<kw name="Open Saucedemo" owner="SauceDemoLibrary">
+<doc>Keyword: Open Saucedemo</doc>
+<status status="PASS" start="2026-03-27T18:39:17.294967" elapsed="0.035039"/>
+</kw>
+<kw name="Login" owner="SauceDemoLibrary">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<doc>Keyword: Login</doc>
+<status status="PASS" start="2026-03-27T18:39:17.330314" elapsed="0.161307"/>
+</kw>
+<kw name="Wait For Load" owner="SauceDemoLibrary">
+<doc>Keyword: Wait For Load</doc>
+<status status="PASS" start="2026-03-27T18:39:17.491888" elapsed="0.010504"/>
+</kw>
+<kw name="Add To Cart" owner="SauceDemoLibrary">
+<doc>Keyword: Add To Cart</doc>
+<status status="PASS" start="2026-03-27T18:39:17.502617" elapsed="0.004882"/>
+</kw>
+<kw name="Get Cart Count" owner="SauceDemoLibrary">
+<msg time="2026-03-27T18:39:17.527272" level="INFO">${count} = 6</msg>
+<var>${count}</var>
+<doc>Keyword: Get Cart Count</doc>
+<status status="PASS" start="2026-03-27T18:39:17.507717" elapsed="0.019636"/>
+</kw>
+<kw name="Go To Cart" owner="SauceDemoLibrary">
+<doc>Keyword: Go To Cart</doc>
+<status status="PASS" start="2026-03-27T18:39:17.527595" elapsed="0.051328"/>
+</kw>
+<kw name="Validation Item Count" owner="SauceDemoLibrary">
+<msg time="2026-03-27T18:39:17.619080" level="INFO">[PASS] purchased count6,matches 6</msg>
+<arg>${count}</arg>
+<doc>Keyword: Validation Item Count</doc>
+<status status="PASS" start="2026-03-27T18:39:17.579178" elapsed="0.039981"/>
+</kw>
+<kw name="Proceed To Checkout" owner="SauceDemoLibrary">
+<doc>Keyword: Proceed To Checkout</doc>
+<status status="PASS" start="2026-03-27T18:39:17.619401" elapsed="0.045678"/>
+</kw>
+<kw name="Fill Customer Info" owner="SauceDemoLibrary">
+<arg>Aru</arg>
+<arg>Don</arg>
+<arg>908765</arg>
+<doc>Keyword: Fill Customer Info</doc>
+<status status="PASS" start="2026-03-27T18:39:17.665322" elapsed="0.209417"/>
+</kw>
+<kw name="Complete Order" owner="SauceDemoLibrary">
+<msg time="2026-03-27T18:39:17.940715" level="INFO">[PASS] Order Placed Successfully</msg>
+<doc>Keyword: Complete Order</doc>
+<status status="PASS" start="2026-03-27T18:39:17.875108" elapsed="0.065745"/>
+</kw>
+<status status="PASS" start="2026-03-27T18:39:17.294655" elapsed="0.646450"/>
+</test>
+<kw name="Stop Browser" owner="SauceDemoLibrary" type="TEARDOWN">
+<doc>Keyword: Stop Browser</doc>
+<status status="PASS" start="2026-03-27T18:39:17.941665" elapsed="2.180407"/>
+</kw>
+<status status="PASS" start="2026-03-27T18:39:14.771480" elapsed="5.350694"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Saucedemo Tests" id="s1" pass="3" fail="0" skip="0">Saucedemo Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -21,3 +21,5 @@ venv/
 Thumbs.db
 
 file.json
+output.xml
+log.html
